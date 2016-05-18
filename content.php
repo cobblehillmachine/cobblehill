@@ -24,8 +24,7 @@
 					the_post_thumbnail('full');
 				} 	
 			endif;
-		?>	
-		<div class="small-divider"></div>	
+		?>		
 		<div class="cont"><div class="post-excerpt"><?php if(is_single()) { ?><?php the_content(); ?><?php } else { ?><?php the_excerpt(); ?><?php } ?></div></div>
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
 			<div class="entry-meta">
